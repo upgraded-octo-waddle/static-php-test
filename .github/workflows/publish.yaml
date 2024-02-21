@@ -36,7 +36,7 @@ jobs:
       - name: Convert PHP to HTML
         run: |
           for file in $(find . -name "*.php"); do
-            php $file > publish/$(basename $file .php).html
+            php $file > publish/$(basename $file .php).php
           done
 
       # - name: Deploy to GitHub Pages
