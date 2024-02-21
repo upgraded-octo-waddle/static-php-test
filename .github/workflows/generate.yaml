@@ -1,9 +1,11 @@
 name: Render PHP to HTML and Deploy to GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+
 
 jobs:
   build-and-deploy:
